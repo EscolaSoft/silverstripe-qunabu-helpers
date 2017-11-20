@@ -8,8 +8,6 @@
 	"homepage": "http://qunabu.com",
 	"require": {
 		"fortytwo-studio/webfaction-php": "dev-master",
-		"phpseclib/phpseclib": "^2.0",
-		"silverstripe/recipe-plugin": "^1",
-		"silverstripe/recipe-cms": "1.0.x-dev"
+		"phpseclib/phpseclib": "^2.0"
 	}
 }
