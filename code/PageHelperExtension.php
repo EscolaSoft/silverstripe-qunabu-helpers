@@ -6,6 +6,11 @@
  * Time: 10:35
  */
 
+use SilverStripe\ORM\DataExtension;
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\View\SSViewer;
+use SilverStripe\Control\Director;
+
 class PageHelperExtension extends DataExtension {
   public function isDev() {
     return Director::get_environment_type() == 'dev';
@@ -14,7 +19,12 @@ class PageHelperExtension extends DataExtension {
     return Director::get_environment_type() == 'live';
   }
   public function getJavaScriptLibFiles() {
-    $files = glob( BASE_PATH.'/'.$this->owner->ThemeDir().'/javascript/lib/*.js' );
+
+    $themes = SSViewer::get_themes();
+    $ThemeDir = $themes[0];
+  
+
+    $files = glob( BASE_PATH.'/'. $ThemeDir .'/javascript/lib/*.js' );
     usort($files, function($a, $b) {
       return strnatcasecmp($a, $b);
     });

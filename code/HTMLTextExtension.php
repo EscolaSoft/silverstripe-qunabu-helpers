@@ -5,6 +5,7 @@
  * Date: 20.04.17
  * Time: 14:41
  */
+use SilverStripe\ORM\DataExtension;
 
 class HTMLTextExtension extends DataExtension {
   public function getProtectEmails() {

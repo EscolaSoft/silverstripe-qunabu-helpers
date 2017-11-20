@@ -5,6 +5,7 @@
  * Date: 06.07.17
  * Time: 11:04
  */
+use SilverStripe\Dev\BuildTask;
 
 class SetEnvironmentTask extends BuildTask {
   public function run($request) {

@@ -4,9 +4,12 @@
 	"keywords": ["silverstripe", "CMS"],
 	"license": "BSD-3-Clause",
 	"minimum-stability": "dev",
-  "type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
+	"homepage": "http://qunabu.com",
 	"require": {
 		"fortytwo-studio/webfaction-php": "dev-master",
-		"phpseclib/phpseclib": "^2.0"
+		"phpseclib/phpseclib": "^2.0",
+		"silverstripe/recipe-plugin": "^1",
+		"silverstripe/recipe-cms": "1.0.x-dev"
 	}
 }

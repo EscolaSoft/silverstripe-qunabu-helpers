@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\ORM\DataExtension;
+
 class ImageHelperExtension extends DataExtension {
   private static $db = array(
     'DominantColor'=>'Varchar(7)'
