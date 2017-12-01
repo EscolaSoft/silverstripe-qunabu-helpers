@@ -42,4 +42,11 @@ class PageHelperExtension extends DataExtension {
     return $result;
 
   }
+    
+  public function getThemeDir() {
+
+    $ss = SSViewer::get_themes();    
+    return 'themes/'.$ss[0];
+
+  }
 }
