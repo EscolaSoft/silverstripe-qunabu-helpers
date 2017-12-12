@@ -11,7 +11,7 @@ class HTMLTextExtension extends DataExtension {
 
     /** @var HTMLText $html */
     $html = $this->owner->RAW();;
-    $pattern = “/\<a.?href=\“mailto:(.*?)\“.+?\<\/a\>/“;
+    $pattern = "/\<a.?href=\"mailto:(.*?)\".+?\<\/a\>/";
     //$replacement = '${1}1,$3';
     $html = preg_replace_callback($pattern, function($matches){
       $e = $matches[1];
